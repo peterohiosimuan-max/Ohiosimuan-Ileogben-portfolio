@@ -4,82 +4,90 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ohiosimuan Ileogben Peter | Portfolio</title>
-<meta name="description" content="Portfolio de Ohiosimuan Ileogben Peter, desarrollador de aplicaciones multiplataforma.">
+<meta name="description" content="Portfolio de Ohiosimuan Ileogben Peter, desarrollador de aplicaciones multiplataforma." data-i18n-attr="content:metaDesc">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<a class="skip" href="#main">Saltar al contenido</a>
+<a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
 <header class="nav">
   <a class="logo" href="#top">Peter Ileogben</a>
-  <button id="menu-btn" class="icon-btn menu-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="links">&#9776;</button>
-  <nav id="links" class="links" aria-label="Principal">
-    <a href="#about">Sobre mí</a>
-    <a href="#skills">Habilidades</a>
-    <a href="#projects">Proyectos</a>
-    <a href="#education">Formación</a>
-    <a href="#contact">Contacto</a>
-    <button id="theme-btn" class="icon-btn" aria-label="Cambiar modo oscuro">&#9680;</button>
+  <nav id="links" class="links" data-i18n-attr="aria-label:navMain">
+    <a href="#about" data-i18n="about">Sobre mí</a>
+    <a href="#skills" data-i18n="skills">Habilidades</a>
+    <a href="#projects" data-i18n="projects">Proyectos</a>
+    <a href="#education" data-i18n="education">Formación</a>
+    <a href="#contact" data-i18n="contact">Contacto</a>
   </nav>
+  <div class="tools">
+    <select id="lang" data-i18n-attr="aria-label:langLabel">
+      <option value="es">Español</option>
+      <option value="en">English</option>
+      <option value="ca">Català</option>
+      <option value="sv">Svenska</option>
+    </select>
+    <button id="theme-btn" class="icon-btn" data-i18n-attr="aria-label:theme">&#9680;</button>
+    <button id="menu-btn" class="icon-btn menu-btn" aria-expanded="false" aria-controls="links" data-i18n-attr="aria-label:menuOpen">&#9776;</button>
+  </div>
 </header>
 
 <main id="main">
 <section class="hero" id="top">
-  <img class="avatar" src="assets/profile-pic-1.jpg" alt="Foto de Ohiosimuan Ileogben Peter" width="260" height="260">
+  <img class="avatar" src="assets/profile-pic-1.jpg" alt="" width="260" height="260" data-i18n-attr="alt:avatarAlt">
   <div>
-    <p class="eyebrow">Hola, soy</p>
+    <p class="eyebrow" data-i18n="hello">Hola, soy</p>
     <h1>Ohiosimuan Ileogben Peter</h1>
-    <p class="lead">Desarrollador de aplicaciones multiplataforma. Creo aplicaciones web con Angular, Laravel y MySQL.</p>
+    <p class="lead" data-i18n="lead"></p>
     <div class="btns">
-      <a class="btn primary" href="#projects">Ver proyectos</a>
-      <a class="btn" href="#contact">Contacto</a>
+      <a class="btn primary" href="#projects" data-i18n="seeWork"></a>
+      <a class="btn" href="#contact" data-i18n="contact"></a>
     </div>
     <div class="social">
       <a href="https://github.com/peterohiosimuan-max">GitHub</a>
       <a href="https://www.linkedin.com/in/peter-ohiosimuan-ileogben-418016406">LinkedIn</a>
-      <a href="mailto:peterois17@outlook.com">Correo</a>
+      <a href="mailto:peterois17@outlook.com" data-i18n="email"></a>
     </div>
   </div>
 </section>
 
 <section id="about">
-  <h2>Sobre mí</h2>
+  <h2 data-i18n="about"></h2>
   <div class="two">
-    <p>Estoy terminando el Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Multiplataforma en el Institut Baix Camp, en Reus, y hago unas prácticas remotas en TalensIA, donde el equipo desarrolla una aplicación web de recursos humanos.</p>
-    <p>Antes de dedicarme al software trabajé en hostelería, como entrenador deportivo, en ventas y dando clases particulares. Eso me enseñó a explicar las cosas con claridad, trabajar con gente y mantener la calma bajo presión. Hablo inglés (nativo), español (nivel profesional) y catalán (nivel básico-medio).</p>
+    <p data-i18n="aboutP1"></p>
+    <p data-i18n="aboutP2"></p>
   </div>
 </section>
 
 <section id="skills">
-  <h2>Habilidades</h2>
+  <h2 data-i18n="skills"></h2>
   <div class="cards">
     <div class="card"><h3>Front end</h3><div class="chips"><span>Angular</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
-    <div class="card"><h3>Back end y datos</h3><div class="chips"><span>Laravel</span><span>PHP</span><span>MySQL</span></div></div>
-    <div class="card"><h3>Herramientas y personales</h3><div class="chips"><span>Git</span><span>Trabajo en equipo</span><span>Comunicación</span><span>Trilingüe</span></div></div>
+    <div class="card"><h3 data-i18n="back"></h3><div class="chips"><span>Laravel</span><span>PHP</span><span>MySQL</span></div></div>
+    <div class="card"><h3 data-i18n="tools"></h3><div class="chips"><span>Git</span><span data-i18n="teamwork"></span><span data-i18n="communication"></span><span data-i18n="trilingual"></span></div></div>
   </div>
 </section>
 
 <section id="projects">
-  <h2>Proyectos</h2>
+  <h2 data-i18n="projects"></h2>
   <div class="toolbar">
-    <input id="search" type="search" placeholder="Buscar proyectos" aria-label="Buscar proyectos">
-    <div id="filters" class="filters" role="group" aria-label="Filtrar por tecnología"></div>
+    <input id="search" type="search" data-i18n-attr="placeholder:searchPh,aria-label:searchPh">
+    <div id="filters" class="filters" role="group" data-i18n-attr="aria-label:filterLabel"></div>
   </div>
   <div id="grid" class="cards"></div>
-  <p id="empty" class="muted" hidden>Ningún proyecto coincide con la búsqueda.</p>
+  <p id="empty" class="muted" hidden data-i18n="empty"></p>
 </section>
 
 <section id="education">
-  <h2>Formación y certificados</h2>
+  <h2 data-i18n="eduTitle"></h2>
   <ul class="timeline">
-    <li><strong>CFGS Desarrollo de Aplicaciones Multiplataforma (DAM)</strong><span>Institut Baix Camp, Reus. En curso.</span></li>
-    <li><strong>Prácticas remotas en TalensIA</strong><span>Angular, Laravel y MySQL en una aplicación web de recursos humanos.</span></li>
-    <!-- Añade aquí tus certificados, copia un <li> por cada uno -->
+    <li><strong data-i18n="dam"></strong><span data-i18n="damMeta"></span></li>
+    <li><strong data-i18n="intern"></strong><span data-i18n="internMeta"></span></li>
+    <!-- Add certificates here / Añade aquí tus certificados: copy one <li> and add its texts to script.js -->
   </ul>
 </section>
 
 <section id="contact">
-  <h2>Contacto</h2>
-  <p>¿Quieres trabajar conmigo o tienes alguna pregunta? Escríbeme.</p>
+  <h2 data-i18n="contact"></h2>
+  <p data-i18n="contactText"></p>
   <div class="btns">
     <a class="btn primary" href="mailto:peterois17@outlook.com">peterois17@outlook.com</a>
     <a class="btn" href="https://www.linkedin.com/in/peter-ohiosimuan-ileogben-418016406">LinkedIn</a>
